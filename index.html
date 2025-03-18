@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+        <div class="theme-selector">
+            <button id="light-mode">Light Mode</button>
+            <button id="dark-mode">Dark Mode</button>
+        </div>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+            <label for="village">Village:</label>
+            <input type="text" id="village" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="user-card" class="card">
+            <h2>User Details</h2>
+            <p><strong>Name:</strong> <span id="card-name"></span></p>
+            <p><strong>Phone:</strong> <span id="card-phone"></span></p>
+            <p><strong>Village:</strong> <span id="card-village"></span></p>
+            <p><strong>City:</strong> <span id="card-city"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
